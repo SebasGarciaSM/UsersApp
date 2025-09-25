@@ -4,8 +4,9 @@ import com.example.users_app.data.services.UserApiService
 import com.example.users_app.domain.interfaces.IUserRepository
 import com.example.users_app.domain.models.AddressModel
 import com.example.users_app.domain.models.UserModel
+import javax.inject.Inject
 
-class UserRepository(
+class UserRepository @Inject constructor(
     private val api: UserApiService
 ) : IUserRepository {
 
